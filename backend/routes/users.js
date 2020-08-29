@@ -1,9 +1,28 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
+const userController = require("../controller/userController");
+require("../models/db");
+
+/*
+routes 
+
+router.route('/signin').post(userController.signin)
+router.route('/signup').post(userController.signup)
+
+router.route('/:id').get(userController.getUser).patch(userController.updateUser).delete(userController.deleteUser)
+
+
+*/
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+
+router.route("/signin").post(userController.signin);
+router.route("/signup").post(userController.signup);
+
+router
+  .route("/:id")
+  .get(userController.getUser)
+  .patch(userController.updateUser)
+  .delete(userController.deleteUser);
 
 module.exports = router;
