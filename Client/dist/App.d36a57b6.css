@@ -14844,5 +14844,15 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+@font-face {
+  font-family: "nexa-bold";
+  src: url("/Nexa-Bold.77ea54e5.otf");
+}
+
+@font-face {
+  font-family: "nexa-light";
+  src: url("/Nexa-Light.96d4d9d7.otf");
+}
+
 
 /*# sourceMappingURL=/App.d36a57b6.css.map */
