@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+const config = require("../config/db.config");
 mongoose.connect(
-  "mongodb://localhost:27017/digim",
+  `mongodb://${config.HOST}:${config.PORT}/${config.DB}`,
 
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {

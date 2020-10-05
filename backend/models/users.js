@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema(
   {
-    name: {
+    companyName: {
       type: String,
     },
     email: {
@@ -13,14 +13,14 @@ const userSchema = mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["user,admin"],
+      enum: ["admin", "user"],
       default: "user",
     },
     phone: {
       type: String,
     },
   },
-  timestamp({})
+  { timestamps: {} }
 );
 
 const User = mongoose.model("User", userSchema);
