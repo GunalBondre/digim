@@ -49542,7 +49542,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.$orange = exports.$bgWhite = exports.$mainPink = exports.$mainBlue = exports.$buttonBlue = void 0;
+exports.$lightGrey = exports.$orange = exports.$bgWhite = exports.$mainPink = exports.$mainBlue = exports.$buttonBlue = void 0;
 // color variables
 var $buttonBlue = "#0092FF";
 exports.$buttonBlue = $buttonBlue;
@@ -49554,6 +49554,8 @@ var $bgWhite = "#FFFF";
 exports.$bgWhite = $bgWhite;
 var $orange = "#FFA500";
 exports.$orange = $orange;
+var $lightGrey = "#F3F6F9";
+exports.$lightGrey = $lightGrey;
 },{}],"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
 "use strict";
 
@@ -54875,7 +54877,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  font-size: 1.7rem;\n  letter-spacing: 1.5px;\n  font-family: nexa-bold;\n  @media (max-width: 768px) {\n    font-size: 1.5rem;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-size: 1.5rem;\n  letter-spacing: 1.5px;\n  font-family: nexa-bold;\n  @media (max-width: 768px) {\n    font-size: 1.5rem;\n  }\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -54885,7 +54887,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.5rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 768px) {\n    font-size: 1.2rem;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.7rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 768px) {\n    font-size: 1.2rem;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -55476,6 +55478,12 @@ var Navbar = /*#__PURE__*/function (_Component) {
 exports.default = Navbar;
 },{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/email.jpg":[function(require,module,exports) {
 module.exports = "/email.ab509769.jpg";
+},{}],"assets/email_marketing_plants_desktop.jpg":[function(require,module,exports) {
+module.exports = "/email_marketing_plants_desktop.f901a30e.jpg";
+},{}],"assets/online_stores_gems_desktop.jpg":[function(require,module,exports) {
+module.exports = "/online_stores_gems_desktop.c34d2924.jpg";
+},{}],"assets/social_marketing_food_desktop.jpg":[function(require,module,exports) {
+module.exports = "/social_marketing_food_desktop.a86dd346.jpg";
 },{}],"components/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -55491,6 +55499,12 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _style = require("../Shared/style");
 
 var _email = _interopRequireDefault(require("../assets/email.jpg"));
+
+var _email_marketing_plants_desktop = _interopRequireDefault(require("../assets/email_marketing_plants_desktop.jpg"));
+
+var _online_stores_gems_desktop = _interopRequireDefault(require("../assets/online_stores_gems_desktop.jpg"));
+
+var _social_marketing_food_desktop = _interopRequireDefault(require("../assets/social_marketing_food_desktop.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55520,8 +55534,48 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  .wrapper {\n    display: flex;\n    .leftSection,\n    .rightSection {\n      width: 50%;\n      padding: 0 20px;\n    }\n    img {\n      width: 100%;\n    }\n    @media (max-width: 767px) {\n      flex-direction: column;\n      .leftSection {\n        width: 100%;\n        img {\n          width: 100%;\n        }\n        order: 2;\n      }\n      .rightSection {\n        width: 100%;\n        order: 1;\n      }\n    }\n    H3 {\n      font-size: 1.2rem;\n      color: ", ";\n    }\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  margin: 50px 0;\n  padding: 50px 0;\n  background-color: ", ";\n  .featureDetail-wrapper {\n    display: flex;\n    .leftSection,\n    .rightSection {\n      width: 50%;\n      padding: 0 20px;\n    }\n    img {\n      width: 100%;\n    }\n    @media (max-width: 767px) {\n      flex-direction: column;\n      .leftSection {\n        width: 100%;\n      }\n      .rightSection {\n        width: 100%;\n        img {\n          width: 100%;\n        }\n      }\n    }\n    H4 {\n      line-height: 1.8;\n      padding-top: 15px;\n    }\n    H3 {\n      font-size: 1.2rem;\n      color: ", ";\n    }\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  @media (max-width: 767px) {\n    grid-template-columns: repeat(1, 1fr);\n  }\n  gap: 10px;\n  .contents {\n    text-align: center;\n    H3 {\n      padding-top: 15px;\n    }\n    i {\n      color: ", ";\n    }\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  margin: 100px 0;\n  H2 {\n    font-size: 2rem;\n    span {\n      color: ", ";\n    }\n  }\n  H4 {\n    padding-top: 10px;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding-top: 100px;\n  width: 100%;\n  @media (max-width: 767px) {\n    flex-direction: column;\n  }\n  .left-section {\n    width: 40%;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    H1 {\n      max-width: 400px;\n      font-size: 3.5rem;\n      padding-top: 100px;\n      @media (max-width: 480px) {\n        font-size: 2rem;\n        padding-top: 20px;\n      }\n    }\n    H4 {\n      max-width: 450px;\n      border-left: 3px solid ", ";\n      padding-left: 20px;\n      margin-top: 20px;\n    }\n  }\n  .right-section {\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    width: 60%;\n    img {\n      width: 100%;\n      padding-top: 50px;\n      @media (max-width: 480px) {\n        padding-top: 20px;\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding-top: 100px;\n  width: 100%;\n  @media (max-width: 767px) {\n    flex-direction: column;\n  }\n  .left-section {\n    width: 40%;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    H1 {\n      max-width: 400px;\n      font-size: 3.5rem;\n      padding-top: 100px;\n      @media (max-width: 480px) {\n        font-size: 2rem;\n        padding-top: 20px;\n      }\n    }\n    H4 {\n      max-width: 450px;\n      border-left: 3px solid ", ";\n      padding-left: 20px;\n      margin-top: 20px;\n    }\n  }\n  .right-section {\n    padding-left: 20px;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    width: 60%;\n    img {\n      width: 100%;\n      max-width: 650px;\n      padding-top: 50px;\n      @media (max-width: 480px) {\n        padding-top: 20px;\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -55534,6 +55588,24 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Wrapper = _styledComponents.default.div(_templateObject(), function (props) {
   return props.theme.$orange;
+});
+
+var WhyDigim = _styledComponents.default.div(_templateObject2(), function (props) {
+  return props.theme.$mainBlue;
+});
+
+var Features = _styledComponents.default.div(_templateObject3(), function (props) {
+  return props.theme.$mainBlue;
+});
+
+var FeatureDetail = _styledComponents.default.div(_templateObject4(), function (props) {
+  return props.theme.$lightGrey;
+}, function (props) {
+  return props.theme.$buttonBlue;
+});
+
+var StoreDetail = _styledComponents.default.div(_templateObject5(), function (props) {
+  return props.theme.$buttonBlue;
 });
 
 var Home = /*#__PURE__*/function (_Component) {
@@ -55550,14 +55622,67 @@ var Home = /*#__PURE__*/function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_style.SideMargin, null, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", {
         className: "left-section"
       }, /*#__PURE__*/_react.default.createElement(_style.H1, null, "Prepare for take off"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Digim helps small businesses do big things, with the right tools and guidance every step of the way."), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, null, "Take a free test drive")), /*#__PURE__*/_react.default.createElement("div", {
         className: "right-section"
       }, /*#__PURE__*/_react.default.createElement("img", {
         src: _email.default,
         alt: ""
-      })))));
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement(WhyDigim, null, /*#__PURE__*/_react.default.createElement(_style.H2, null, "Why digim?"), /*#__PURE__*/_react.default.createElement(_style.H2, null, /*#__PURE__*/_react.default.createElement("span", null, "Because its just a smart business move")), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Whether you\u2019re launching an email marketing campaign to engage customers, building an awesome website in minutes, uploading products to your online store, generating awareness on social media, or boosting sales with Google Ads, we have all the tools and guidance you need to achieve the results you want, all in one place."))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement(Features, null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "contents"
+      }, /*#__PURE__*/_react.default.createElement("i", {
+        className: "fa fa-envelope fa-4x"
+      }), /*#__PURE__*/_react.default.createElement(_style.H3, null, "Email Marketing"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Grow your brand by reaching people where they go every day: their inbox.")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "contents"
+      }, /*#__PURE__*/_react.default.createElement("i", {
+        className: "fa fa-store fa-4x"
+      }), /*#__PURE__*/_react.default.createElement(_style.H3, null, "Ecommerce Store "), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Set up an online store in no time and start selling your digital or physical goods fast.")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "contents"
+      }, /*#__PURE__*/_react.default.createElement("i", {
+        className: "fa fa-user fa-4x"
+      }), /*#__PURE__*/_react.default.createElement(_style.H3, null, "Social Media Merketing"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Use Facebook and Instagram ads to bring new leads to your website.")))), /*#__PURE__*/_react.default.createElement(FeatureDetail, null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "featureDetail-wrapper"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "leftSection"
+      }, /*#__PURE__*/_react.default.createElement(_style.H3, null, "Email Marketing"), /*#__PURE__*/_react.default.createElement(_style.H2, null, "Communicate Smarter"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Have something to say or sell? Constant Contact\u2019s email marketing tools make it easy to stand out while you get the word out. Use our free Email Template Builder or browse hundreds of mobile-optimized templates for every purpose\u2014from promoting a sale to launching a new product. Customize as much as you want with our easy-to-use editing tools. Then track your success with real-time reporting and robust analytics."), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, null, "Learn More")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "rightSection"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _email_marketing_plants_desktop.default,
+        alt: "",
+        srcset: ""
+      }))))), /*#__PURE__*/_react.default.createElement(StoreDetail, null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "wrapper"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "leftSection"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _online_stores_gems_desktop.default,
+        alt: ""
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "rightSection"
+      }, /*#__PURE__*/_react.default.createElement(_style.H3, null, "Online Store"), /*#__PURE__*/_react.default.createElement(_style.H2, null, "Sell Smarter"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "What\u2019s free to set up, open 24 hours a day, and can be seen around the world? You guessed it. Whether you\u2019re a mom-and-pop or an upstart, moving your business online or launching a standalone store, selling physical or digital products, Constant Contact\u2019s powerful ecommerce platform ensures your customers will have a great shopping experience on any device."), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, null, "Learn More"))))), /*#__PURE__*/_react.default.createElement(FeatureDetail, null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "featureDetail-wrapper"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "leftSection"
+      }, /*#__PURE__*/_react.default.createElement(_style.H3, null, "Social Marketing"), /*#__PURE__*/_react.default.createElement(_style.H2, null, "Connect Smarter"), /*#__PURE__*/_react.default.createElement(_style.H4, null, "Easily create Facebook and Instagram ad campaigns that drive traffic to your website, promote list growth, and generate awareness for your business\u2014all directly from your account."), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, null, "Learn More")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "rightSection"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _social_marketing_food_desktop.default,
+        alt: "",
+        srcset: ""
+      }))))));
     }
   }]);
 
@@ -55565,7 +55690,7 @@ var Home = /*#__PURE__*/function (_Component) {
 }(_react.Component);
 
 exports.default = Home;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Shared/style":"Shared/style.js","../assets/email.jpg":"assets/email.jpg"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Shared/style":"Shared/style.js","../assets/email.jpg":"assets/email.jpg","../assets/email_marketing_plants_desktop.jpg":"assets/email_marketing_plants_desktop.jpg","../assets/online_stores_gems_desktop.jpg":"assets/online_stores_gems_desktop.jpg","../assets/social_marketing_food_desktop.jpg":"assets/social_marketing_food_desktop.jpg"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55691,7 +55816,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49274" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58447" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
