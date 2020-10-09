@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"id":"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602211497716},{"name":"G:\\computer-science\\konfinity\\digim\\client\\node_modules\\@fortawesome\\fontawesome-free\\package.json","includedInParent":true,"mtime":1597851747840}],"generated":{"js":"module.exports = \"/21242933e16bf5fcfdde76d190890cef.eot\";"},"sourceMaps":null,"error":null,"hash":"89bd2e38475e441a5cd70f663f921d61","cacheData":{"env":{}}}
+=======
+{"id":"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602217307479},{"name":"G:\\computer-science\\konfinity\\digim\\client\\node_modules\\@fortawesome\\fontawesome-free\\package.json","includedInParent":true,"mtime":1597851747840}],"generated":{"js":"module.exports = \"/21242933e16bf5fcfdde76d190890cef.eot\";"},"sourceMaps":null,"error":null,"hash":"89bd2e38475e441a5cd70f663f921d61","cacheData":{"env":{}}}
+>>>>>>> Stashed changes

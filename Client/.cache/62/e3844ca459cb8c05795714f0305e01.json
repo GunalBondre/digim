@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"id":"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602211497716},{"name":"G:\\computer-science\\konfinity\\digim\\client\\node_modules\\@fortawesome\\fontawesome-free\\package.json","includedInParent":true,"mtime":1597851747840}],"generated":{"js":"module.exports = \"/e5dd7a8a2fe3428b004a765ceca31406.woff\";"},"sourceMaps":null,"error":null,"hash":"dc0bd022735ed218df547742a1b2f172","cacheData":{"env":{}}}
+=======
+{"id":"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602217307479},{"name":"G:\\computer-science\\konfinity\\digim\\client\\node_modules\\@fortawesome\\fontawesome-free\\package.json","includedInParent":true,"mtime":1597851747840}],"generated":{"js":"module.exports = \"/e5dd7a8a2fe3428b004a765ceca31406.woff\";"},"sourceMaps":null,"error":null,"hash":"dc0bd022735ed218df547742a1b2f172","cacheData":{"env":{}}}
+>>>>>>> Stashed changes

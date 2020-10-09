@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"id":"font/Nexa-Bold.otf","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602211497716}],"generated":{"js":"module.exports = \"/e8664fe8a3c0425c3170cd8e77ea54e5.otf\";"},"sourceMaps":null,"error":null,"hash":"c9f309b3d47969ecac64a77a6c672594","cacheData":{"env":{}}}
+=======
+{"id":"font/Nexa-Bold.otf","dependencies":[{"name":"G:\\computer-science\\konfinity\\digim\\client\\package.json","includedInParent":true,"mtime":1602217307479}],"generated":{"js":"module.exports = \"/e8664fe8a3c0425c3170cd8e77ea54e5.otf\";"},"sourceMaps":null,"error":null,"hash":"c9f309b3d47969ecac64a77a6c672594","cacheData":{"env":{}}}
+>>>>>>> Stashed changes
