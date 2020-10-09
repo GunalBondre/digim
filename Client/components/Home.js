@@ -5,6 +5,7 @@ import imgSrc from "../assets/email.jpg";
 import emaildetailImg from "../assets/email_marketing_plants_desktop.jpg";
 import onlineStoreImg from "../assets/online_stores_gems_desktop.jpg";
 import socialImage from "../assets/social_marketing_food_desktop.jpg";
+import Footer from './Footer'
 const Wrapper = styled.div`
   display: flex;
   padding-top: 100px;
@@ -149,6 +150,24 @@ const StoreDetail = styled.div`
     }
   }
 `;
+const GrowWebsite = styled.div`
+  H2 {
+    font-size: 3rem;
+    color: ${(props) => props.theme.$buttonBlue};
+    max-width: 300px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+  ul {
+    li {
+      list-style-type: none;
+    }
+    H3 {
+      color: ${(props) => props.theme.$buttonBlue};
+    }
+  }
+`;
 export default class Home extends Component {
   render() {
     return (
@@ -230,7 +249,7 @@ export default class Home extends Component {
                 <ButtonAscent>Learn More</ButtonAscent>
               </div>
               <div className="rightSection">
-                <img src={emaildetailImg} alt="" srcset="" />
+                <img src={emaildetailImg} alt=""  />
               </div>
             </div>
           </div>
@@ -271,11 +290,57 @@ export default class Home extends Component {
                 <ButtonAscent>Learn More</ButtonAscent>
               </div>
               <div className="rightSection">
-                <img src={socialImage} alt="" srcset="" />
+                <img src={socialImage} alt="" />
               </div>
             </div>
           </div>
         </FeatureDetail>
+        <GrowWebsite>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <H2>4 Easy Ways To Grow Your Business</H2>
+              </div>
+              <div className="col-md-6">
+                <ul className="steps">
+                  <li>
+                    <H3>1. Set Up online Store </H3>
+                    <p>
+                      Do you have your own store if yes its ok if no we can help
+                      you set up one
+                    </p>
+                  </li>
+                  <li>
+                    <H3>2. Help People Find you </H3>
+                    <p>
+                      Digim helps you spread the word through email, social
+                      media, SEO and other forms of online marketing⁠—all from
+                      one place
+                    </p>
+                  </li>
+                  <li>
+                    <H3>3. Use email to boost loyalty.</H3>
+                    <p>
+                      With email marketing tools like ours, you can segment
+                      subscribers based on different criteria and send them
+                      content they'll want to open.
+                    </p>
+                  </li>
+                  <li>
+                    <H3>4. Track your performance.</H3>
+                    <p>
+                      Constant Contact's analytic tool gives you detailed
+                      visitor metrics in real time⁠—allowing you to quickly
+                      identify and pounce on trends.
+                    </p>
+                  </li>
+                  <ButtonAscent>Get Started</ButtonAscent>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </GrowWebsite>
+        <Footer />
       </div>
     );
   }

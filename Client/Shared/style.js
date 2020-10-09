@@ -87,7 +87,10 @@ export const H4 = styled.h4`
   font-size: 1.2rem;
   line-height: 1.5;
 `;
-
+export const H5 = styled.h5`
+font-family: nexa-light;
+font-size:1.2rem
+`
 export const H1 = styled.h1`
   font-family: nexa-bold;
   font-size: 2.5rem;
