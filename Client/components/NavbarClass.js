@@ -7,22 +7,23 @@ export default class NavbarClass extends Component {
     return (
       <div>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">DIGIM</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-            <Nav.Link href="pricing" style={{ paddingTop: "15px" }}>
-                Pricing
-              </Nav.Link>
-              <Nav.Link href="signin" style={{ paddingTop: "15px" }}>
-                Signin
-              </Nav.Link>
-              <Nav.Link href="signup">
-                <Button variant="primary">Signup</Button>
-              </Nav.Link>
-              
-            </Nav>
-          </Navbar.Collapse>
+          <div className="container">
+            <Navbar.Brand href="/">DIGIM</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link href="pricing" style={{ paddingTop: "15px" }}>
+                  Pricing
+                </Nav.Link>
+                <Nav.Link href="signin" style={{ paddingTop: "15px" }}>
+                  Signin
+                </Nav.Link>
+                <Nav.Link href="signup">
+                  <Button variant="primary">Signup</Button>
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
         </Navbar>
       </div>
     );

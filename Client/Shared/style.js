@@ -66,7 +66,7 @@ export const Form = styled.form`
 
 export const H2 = styled.h2`
   font-family: nexa-bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 1.5px;
   @media (max-width: 768px) {
     font-size: 1.2rem;
@@ -74,7 +74,7 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: 1.5px;
   font-family: nexa-bold;
   @media (max-width: 768px) {
@@ -87,7 +87,10 @@ export const H4 = styled.h4`
   font-size: 1.2rem;
   line-height: 1.5;
 `;
-
+export const H5 = styled.h5`
+font-family: nexa-light;
+font-size:1.2rem
+`
 export const H1 = styled.h1`
   font-family: nexa-bold;
   font-size: 2.5rem;
