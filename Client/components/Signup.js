@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { link } from "react-router-dom";
 import register from "../services/authService";
 import axios from "axios";
-// import { connect } from "react-redux";
-// import { userActions } from "../redux/actions/user.action";
+import { connect } from "react-redux";
+import { userActions } from "../redux/actions/user.action";
 import {
   Input,
   Form,
@@ -114,6 +114,11 @@ export default class Signup extends Component {
     e.preventDefault();
 
     const { companyName, email, password } = this.state;
+
+    // if ((companyName, email, password)) {
+    //   this.props.register(companyName, email, password);
+    // }
+
     axios
       .post("http://localhost:3636/users/signup", {
         companyName,

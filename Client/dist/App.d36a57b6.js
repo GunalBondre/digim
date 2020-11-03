@@ -54866,695 +54866,7 @@ var getUser = function getUser(id) {
 };
 
 exports.getUser = getUser;
-},{"axios":"node_modules/axios/index.js"}],"font/font.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./Nexa-Bold.otf":[["Nexa-Bold.77ea54e5.otf","font/Nexa-Bold.otf"],"font/Nexa-Bold.otf"],"./Nexa-Light.otf":[["Nexa-Light.96d4d9d7.otf","font/Nexa-Light.otf"],"font/Nexa-Light.otf"],"_css_loader":"C:/Users/Kanchan V/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Shared/style.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.SideMargin = exports.StyledLink = exports.P = exports.H1 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.Form = exports.Input = exports.GoogleButton = exports.ButtonAscent = void 0;
-
-var _styledComponents = _interopRequireDefault(require("styled-components"));
-
-require("../font/font.css");
-
-var _reactRouterDom = require("react-router-dom");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _templateObject12() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0px 2rem;\n  @media (min-width: 768px) {\n    margin: 0px 5rem;\n  }\n  @media (min-width: 1200px) {\n    margin: 0px 7rem;\n  }\n"]);
-
-  _templateObject12 = function _templateObject12() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject11() {
-  var data = _taggedTemplateLiteral(["\n  color: ", ";\n  font-family: nexa-light;\n  font-size: 1.2rem;\n  padding-right: 10px;\n\n  &:hover {\n    text-decoration: none;\n  }\n"]);
-
-  _templateObject11 = function _templateObject11() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject10() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-light;\n  font-size: 1rem;\n"]);
-
-  _templateObject10 = function _templateObject10() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 2.5rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 480px) {\n    font-size: 1.8rem;\n  }\n"]);
-
-  _templateObject9 = function _templateObject9() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\nfont-family: nexa-light;\nfont-size:1.2rem\n"]);
-
-  _templateObject8 = function _templateObject8() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-light;\n  font-size: 1.2rem;\n  line-height: 1.5;\n"]);
-
-  _templateObject7 = function _templateObject7() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  font-size: 1.5rem;\n  letter-spacing: 1.5px;\n  font-family: nexa-bold;\n  @media (max-width: 768px) {\n    font-size: 1.5rem;\n  }\n"]);
-
-  _templateObject6 = function _templateObject6() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.7rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 768px) {\n    font-size: 1.2rem;\n  }\n"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  background-color: ", ";\n  width: 70%;\n  padding: 2rem;\n  margin: 0 auto;\n  border-radius: 5px;\n  @media (min-width: 769px) {\n    position: relative;\n    top: 40%;\n    width: 40%;\n    -webkit-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%);\n  }\n  @media (max-width: 768px) {\n    width: 85% !important;\n    margin: 0 auto;\n    top: 20%;\n  }\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  padding: 0.5rem 1rem;\n  font-size: 1.2rem;\n  margin-bottom: 1rem;\n  width: 100%;\n  display: block;\n  &::placeholder {\n    font-size: 1rem;\n    text-transform: capitalize;\n  }\n  /* @media (max-width: 768px) {\n    width: 85%;\n    margin: 1rem auto;\n  } */\n"]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  border: 1px solid ", ";\n  padding: 10px 30px;\n  width: 100%;\n  background-color: ", ";\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  background-color: ", ";\n  color: ", ";\n  padding: 10px 30px;\n  outline: none;\n  border: none;\n  outline: none;\n  border-radius: 30px;\n  margin: 1rem 0;\n  letter-spacing: 1.1px;\n  @media (max-width: 480px) {\n    width: 100%;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-//
-var ButtonAscent = _styledComponents.default.button(_templateObject(), function (props) {
-  return props.theme.$buttonBlue;
-}, function (props) {
-  return props.theme.$bgWhite;
-});
-
-exports.ButtonAscent = ButtonAscent;
-
-var GoogleButton = _styledComponents.default.button(_templateObject2(), function (props) {
-  return props.theme.$mainBlue;
-}, function (props) {
-  return props.theme.$bgWhite;
-});
-
-exports.GoogleButton = GoogleButton;
-
-var Input = _styledComponents.default.input(_templateObject3());
-
-exports.Input = Input;
-
-var Form = _styledComponents.default.form(_templateObject4(), function (props) {
-  return props.theme.$bgWhite;
-});
-
-exports.Form = Form;
-
-var H2 = _styledComponents.default.h2(_templateObject5());
-
-exports.H2 = H2;
-
-var H3 = _styledComponents.default.h3(_templateObject6());
-
-exports.H3 = H3;
-
-var H4 = _styledComponents.default.h4(_templateObject7());
-
-exports.H4 = H4;
-
-var H5 = _styledComponents.default.h5(_templateObject8());
-
-exports.H5 = H5;
-
-var H1 = _styledComponents.default.h1(_templateObject9());
-
-exports.H1 = H1;
-
-var P = _styledComponents.default.p(_templateObject10());
-
-exports.P = P;
-var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject11(), function (props) {
-  return props.theme.$bgWhite;
-});
-exports.StyledLink = StyledLink;
-
-var SideMargin = _styledComponents.default.div(_templateObject12());
-
-exports.SideMargin = SideMargin;
-},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../font/font.css":"font/font.css","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Signup.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _styledComponents = _interopRequireDefault(require("styled-components"));
-
-var _reactRouterDom = require("react-router-dom");
-
-var _authService = _interopRequireDefault(require("../services/authService"));
-
-var _axios = _interopRequireDefault(require("axios"));
-
-var _style = require("../Shared/style");
-
-require("../font/font.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  margin-left: 25px;\n  @media (max-width: 768px) {\n    flex-direction: column;\n    margin-left: 0px;\n  }\n  .left {\n    width: 50%;\n    @media (max-width: 768px) {\n      width: 100%;\n    }\n  }\n  .right {\n    @media (max-width: 768px) {\n      width: 100%;\n    }\n    width: 50%;\n    padding-left: 25px;\n  }\n"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100vh;\n  background-color: ", ";\n  Form {\n    width: 70%;\n  }\n  H2 {\n    text-align: center;\n    padding: 15px 0;\n  }\n  H1 {\n    text-align: center;\n    padding: 20px 0;\n  }\n  .divider {\n    width: 100%;\n    text-align: center;\n    border-bottom: 1px solid black;\n    margin: 10px 0 20px;\n    line-height: 0.3em;\n    padding-top: 15px;\n  }\n  .privacy {\n    padding-top: 50px;\n  }\n  .linkContainer {\n    text-align: center;\n  }\n  span {\n    background-color: white;\n    padding: 0 10px;\n  }\n  @media (max-width: 768px) {\n    padding: 30px 0px;\n    height: 100%;\n  }\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  color: ", ";\n"]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.2rem;\n  padding-left: 10px;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  padding-top: 30px;\n  padding: 15px 0px;\n  display: block;\n  width: 100%;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Header = _styledComponents.default.div(_templateObject());
-
-var Span = _styledComponents.default.span(_templateObject2());
-
-var I = _styledComponents.default.i(_templateObject3(), function (props) {
-  return props.theme.$buttonBlue;
-});
-
-var Div = _styledComponents.default.div(_templateObject4(), function (props) {
-  return props.theme.$mainBlue;
-});
-
-var FormWrapper = _styledComponents.default.div(_templateObject5());
-
-var Signup = /*#__PURE__*/function (_Component) {
-  _inherits(Signup, _Component);
-
-  var _super = _createSuper(Signup);
-
-  function Signup(props) {
-    var _this;
-
-    _classCallCheck(this, Signup);
-
-    _this = _super.call(this, props);
-
-    _defineProperty(_assertThisInitialized(_this), "handleInput", function (e) {
-      _this.setState(_defineProperty({}, e.target.name, e.target.value));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleForm", function (e) {
-      e.preventDefault();
-      var _this$state = _this.state,
-          companyName = _this$state.companyName,
-          email = _this$state.email,
-          password = _this$state.password;
-
-      _axios.default.post("http://localhost:3636/users/signup", {
-        companyName: companyName,
-        email: email,
-        password: password
-      }).then(function (response) {
-        if (response) {
-          console.log(response.data);
-
-          _this.props.history.push("/signin");
-        }
-      });
-    });
-
-    _this.state = {
-      companyName: "",
-      email: "",
-      password: "",
-      submitted: false
-    };
-    return _this;
-  }
-
-  _createClass(Signup, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/_react.default.createElement(Div, null, /*#__PURE__*/_react.default.createElement(_style.H1, null, "DIGIM"), " ", /*#__PURE__*/_react.default.createElement(_style.Form, {
-        onSubmit: this.handleForm
-      }, " ", /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(_style.H2, null, "Create your free account today"), " ", /*#__PURE__*/_react.default.createElement(_style.H3, null, "No contract no credit card required")), /*#__PURE__*/_react.default.createElement(FormWrapper, null, /*#__PURE__*/_react.default.createElement("div", {
-        className: "left"
-      }, /*#__PURE__*/_react.default.createElement(_style.Input, {
-        type: "text",
-        name: "companyName",
-        onChange: this.handleInput,
-        placeholder: "enter your company name",
-        value: this.state.value
-      }), /*#__PURE__*/_react.default.createElement(_style.Input, {
-        type: "email",
-        name: "email",
-        onChange: this.handleInput,
-        placeholder: "enter your email",
-        value: this.state.value
-      }), /*#__PURE__*/_react.default.createElement(_style.Input, {
-        type: "password",
-        name: "password",
-        onChange: this.handleInput,
-        placeholder: "enter your password",
-        value: this.state.value
-      }), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, {
-        type: "submit"
-      }, "Get Started"), /*#__PURE__*/_react.default.createElement("p", {
-        className: "divider"
-      }, /*#__PURE__*/_react.default.createElement("span", null, "OR")), /*#__PURE__*/_react.default.createElement(_style.GoogleButton, null, "Sign Up With Google")), /*#__PURE__*/_react.default.createElement("div", {
-        className: "right"
-      }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
-        className: "fas fa-headphones"
-      }), /*#__PURE__*/_react.default.createElement(Span, null, " Customer support"), " in 6 languages"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
-        className: "fas fa-envelope"
-      }), /*#__PURE__*/_react.default.createElement(Span, null, " 70 Million Emails & SMS "), "Sent Every Day"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
-        className: "fas fa-users"
-      }), /*#__PURE__*/_react.default.createElement(Span, null, "100,000 Users "), " in 6 languages"), /*#__PURE__*/_react.default.createElement("p", null, " ", /*#__PURE__*/_react.default.createElement(I, {
-        className: "fas fa-bullhorn"
-      }), /*#__PURE__*/_react.default.createElement(Span, null, "Send up to 300 "), " emails free per day"), /*#__PURE__*/_react.default.createElement("p", {
-        className: "privacy"
-      }, "By signing up, you are creating a DIGIM account, and you agree to DIGIM'S Terms of Use and Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", {
-        className: "linkContainer"
-      }, /*#__PURE__*/_react.default.createElement(_style.StyledLink, {
-        to: "/signin"
-      }, "I Already have an account")));
-    }
-  }]);
-
-  return Signup;
-}(_react.Component); // function mapState(state) {
-//   const { registering } = state.registration;
-//   return { registering };
-// }
-// const actionCreators = {
-//   register: userActions.register,
-// };
-// export default connect(mapState, actionCreators)(Signup);
-
-
-exports.default = Signup;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../services/authService":"services/authService.js","axios":"node_modules/axios/index.js","../Shared/style":"Shared/style.js","../font/font.css":"font/font.css"}],"redux/constants/user.constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.userConstants = void 0;
-var userConstants = {
-  REGISTER_REQUEST: "USERS_REGISTER_REQUEST",
-  REGISTER_SUCCESS: "USERS_REGISTER_SUCCESS",
-  REGISTER_FAILURE: "USERS_REGISTER_FAILURE",
-  LOGIN_REQUEST: "USERS_LOGIN_REQUEST",
-  LOGIN_SUCCESS: "USERS_LOGIN_SUCCESS",
-  LOGIN_FAILURE: "USERS_LOGIN_FAILURE",
-  LOGOUT: "USERS_LOGOUT",
-  GETALL_REQUEST: "USERS_GETALL_REQUEST",
-  GETALL_SUCCESS: "USERS_GETALL_SUCCESS",
-  GETALL_FAILURE: "USERS_GETALL_FAILURE",
-  DELETE_REQUEST: "USERS_DELETE_REQUEST",
-  DELETE_SUCCESS: "USERS_DELETE_SUCCESS",
-  DELETE_FAILURE: "USERS_DELETE_FAILURE"
-};
-exports.userConstants = userConstants;
-},{}],"redux/helpers/auth-header.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.authHeader = authHeader;
-
-function authHeader() {
-  // return authorization header with jwt token
-  var user = JSON.parse(localStorage.getItem("user"));
-
-  if (user && user.token) {
-    return {
-      "x-access-token": user.token
-    };
-  } else {
-    return {};
-  }
-}
-},{}],"redux/service/userService.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.userService = void 0;
-
-var _authHeader = require("../helpers/auth-header");
-
-var _axios = _interopRequireDefault(require("axios"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var signin = function signin(email, password) {
-  return _axios.default.post("http://localhost:3636/users/signin", {
-    email: email,
-    password: password
-  }).then(function (response) {
-    if (response.data.token) {
-      localStorage.setItem("user", JSON.stringify(response.data));
-      console.log(response.data);
-      console.log("success");
-      return response.data;
-    }
-  });
-};
-
-var logout = function logout() {
-  localStorage.removeItem("user");
-};
-
-var register = function register(companyName, email, password) {
-  _axios.default.post("http://localhost:3636/users/signup", {
-    companyName: companyName,
-    email: email,
-    password: password
-  });
-};
-
-var getCurrentUser = function getCurrentUser() {
-  return JSON.parse(localStorage.getItem("user"));
-};
-
-var getUser = function getUser(id) {
-  _axios.default.post("http://localhost:3636/users/verify", {
-    id: id
-  }).then(function (user) {
-    if (user) {
-      return user.companyName;
-    }
-  });
-};
-
-var userService = {
-  signin: signin,
-  logout: logout,
-  getUser: getUser,
-  register: register,
-  getCurrentUser: getCurrentUser
-};
-exports.userService = userService;
-},{"../helpers/auth-header":"redux/helpers/auth-header.js","axios":"node_modules/axios/index.js"}],"redux/constants/alert.constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.alertConstants = void 0;
-var alertConstants = {
-  SUCCESS: "ALERT_SUCCESS",
-  ERROR: "ALERT_ERROR",
-  CLEAR: "ALERT_CLEAR"
-};
-exports.alertConstants = alertConstants;
-},{}],"redux/actions/alert.action.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.alertActions = void 0;
-
-var _alert = require("../constants/alert.constant");
-
-var alertActions = {
-  success: success,
-  error: error,
-  clear: clear
-};
-exports.alertActions = alertActions;
-
-var success = function success(message) {
-  return {
-    type: _alert.alertConstants.SUCCESS,
-    message: message
-  };
-};
-
-var error = function error(message) {
-  return {
-    type: _alert.alertConstants.ERROR,
-    message: message
-  };
-};
-
-var clear = function clear(message) {
-  return {
-    type: _alert.alertConstants.CLEAR,
-    message: message
-  };
-};
-},{"../constants/alert.constant":"redux/constants/alert.constant.js"}],"redux/actions/user.action.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.userActions = void 0;
-
-var _user = require("../constants/user.constant");
-
-var _userService = require("../service/userService");
-
-var _alert = require("./alert.action");
-
-var userActions = {
-  signin: signin,
-  logout: logout,
-  register: register,
-  getUser: getUser
-};
-exports.userActions = userActions;
-
-var signin = function signin(email, password) {
-  return function (dispatch) {
-    return _userService.userService.signin(email, password).then(function (data) {
-      if (data) {
-        dispatch({
-          type: _user.userConstants.LOGIN_SUCCESS,
-          payload: {
-            user: data
-          }
-        });
-        dispatch({
-          type: _alert.alertActions.success,
-          payload: {
-            message: "logis successful"
-          }
-        });
-        history.push("/");
-      } else {
-        dispatch({
-          type: _user.userConstants.LOGIN_FAILURE
-        });
-        dispatch({
-          type: _alert.alertActions.error,
-          payload: {
-            message: "login failed"
-          }
-        });
-      }
-    });
-  };
-};
-
-var logout = function logout() {
-  _userService.userService.logout();
-
-  return {
-    type: _user.userConstants.LOGOUT
-  };
-};
-
-var register = function register(companyName, email, password) {
-  return function (dispatch) {
-    return _userService.userService.register(companyName, email, password).then(function (data) {
-      if (data) {
-        dispatch({
-          type: _user.userConstants.REGISTER_SUCCESS,
-          payload: {
-            user: data
-          }
-        });
-        dispatch({
-          type: _alert.alertActions.success,
-          payload: {
-            message: "registraton successfull"
-          }
-        });
-        history.push("/signin");
-      } else {
-        dispatch({
-          type: _user.userConstants.REGISTER_FAILURE
-        });
-        dispatch({
-          type: _alert.alertActions.error,
-          payload: {
-            message: "Registration Failed"
-          }
-        });
-      }
-    });
-  };
-};
-
-var getUser = function getUser(id) {
-  return function (dispatch) {
-    return _userService.userService.getUser(id).then(function (data) {
-      if (data) {
-        dispatch({
-          type: _user.userConstants.GETALL_SUCCESS,
-          payload: {
-            user: data
-          }
-        });
-      }
-    });
-  };
-};
-},{"../constants/user.constant":"redux/constants/user.constant.js","../service/userService":"redux/service/userService.js","./alert.action":"redux/actions/alert.action.js"}],"node_modules/react-redux/es/components/Context.js":[function(require,module,exports) {
+},{"axios":"node_modules/axios/index.js"}],"node_modules/react-redux/es/components/Context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57918,7 +57230,701 @@ var _shallowEqual = _interopRequireDefault(require("./utils/shallowEqual"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _batch.setBatch)(_reactBatchedUpdates.unstable_batchedUpdates);
-},{"./components/Provider":"node_modules/react-redux/es/components/Provider.js","./components/connectAdvanced":"node_modules/react-redux/es/components/connectAdvanced.js","./components/Context":"node_modules/react-redux/es/components/Context.js","./connect/connect":"node_modules/react-redux/es/connect/connect.js","./hooks/useDispatch":"node_modules/react-redux/es/hooks/useDispatch.js","./hooks/useSelector":"node_modules/react-redux/es/hooks/useSelector.js","./hooks/useStore":"node_modules/react-redux/es/hooks/useStore.js","./utils/batch":"node_modules/react-redux/es/utils/batch.js","./utils/reactBatchedUpdates":"node_modules/react-redux/es/utils/reactBatchedUpdates.js","./utils/shallowEqual":"node_modules/react-redux/es/utils/shallowEqual.js"}],"services/authHeader.js":[function(require,module,exports) {
+},{"./components/Provider":"node_modules/react-redux/es/components/Provider.js","./components/connectAdvanced":"node_modules/react-redux/es/components/connectAdvanced.js","./components/Context":"node_modules/react-redux/es/components/Context.js","./connect/connect":"node_modules/react-redux/es/connect/connect.js","./hooks/useDispatch":"node_modules/react-redux/es/hooks/useDispatch.js","./hooks/useSelector":"node_modules/react-redux/es/hooks/useSelector.js","./hooks/useStore":"node_modules/react-redux/es/hooks/useStore.js","./utils/batch":"node_modules/react-redux/es/utils/batch.js","./utils/reactBatchedUpdates":"node_modules/react-redux/es/utils/reactBatchedUpdates.js","./utils/shallowEqual":"node_modules/react-redux/es/utils/shallowEqual.js"}],"redux/constants/user.constant.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.userConstants = void 0;
+var userConstants = {
+  REGISTER_REQUEST: "USERS_REGISTER_REQUEST",
+  REGISTER_SUCCESS: "USERS_REGISTER_SUCCESS",
+  REGISTER_FAILURE: "USERS_REGISTER_FAILURE",
+  LOGIN_REQUEST: "USERS_LOGIN_REQUEST",
+  LOGIN_SUCCESS: "USERS_LOGIN_SUCCESS",
+  LOGIN_FAILURE: "USERS_LOGIN_FAILURE",
+  LOGOUT: "USERS_LOGOUT",
+  GETALL_REQUEST: "USERS_GETALL_REQUEST",
+  GETALL_SUCCESS: "USERS_GETALL_SUCCESS",
+  GETALL_FAILURE: "USERS_GETALL_FAILURE",
+  DELETE_REQUEST: "USERS_DELETE_REQUEST",
+  DELETE_SUCCESS: "USERS_DELETE_SUCCESS",
+  DELETE_FAILURE: "USERS_DELETE_FAILURE"
+};
+exports.userConstants = userConstants;
+},{}],"redux/helpers/auth-header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.authHeader = authHeader;
+
+function authHeader() {
+  // return authorization header with jwt token
+  var user = JSON.parse(localStorage.getItem("user"));
+
+  if (user && user.token) {
+    return {
+      "x-access-token": user.token
+    };
+  } else {
+    return {};
+  }
+}
+},{}],"redux/service/userService.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.userService = void 0;
+
+var _authHeader = require("../helpers/auth-header");
+
+var _axios = _interopRequireDefault(require("axios"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var signin = function signin(email, password) {
+  return _axios.default.post("http://localhost:3636/users/signin", {
+    email: email,
+    password: password
+  }).then(function (response) {
+    if (response.data.token) {
+      localStorage.setItem("user", JSON.stringify(response.data));
+      console.log(response.data);
+      console.log("success");
+      return response.data;
+    }
+  });
+};
+
+var logout = function logout() {
+  localStorage.removeItem("user");
+};
+
+var register = function register(companyName, email, password) {
+  _axios.default.post("http://localhost:3636/users/signup", {
+    companyName: companyName,
+    email: email,
+    password: password
+  });
+};
+
+var getCurrentUser = function getCurrentUser() {
+  return JSON.parse(localStorage.getItem("user"));
+};
+
+var getUser = function getUser(id) {
+  _axios.default.post("http://localhost:3636/users/verify", {
+    id: id
+  }).then(function (user) {
+    if (user) {
+      return user.companyName;
+    }
+  });
+};
+
+var userService = {
+  signin: signin,
+  logout: logout,
+  getUser: getUser,
+  register: register,
+  getCurrentUser: getCurrentUser
+};
+exports.userService = userService;
+},{"../helpers/auth-header":"redux/helpers/auth-header.js","axios":"node_modules/axios/index.js"}],"redux/constants/alert.constant.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.alertConstants = void 0;
+var alertConstants = {
+  SUCCESS: "ALERT_SUCCESS",
+  ERROR: "ALERT_ERROR",
+  CLEAR: "ALERT_CLEAR"
+};
+exports.alertConstants = alertConstants;
+},{}],"redux/actions/alert.action.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.alertActions = void 0;
+
+var _alert = require("../constants/alert.constant");
+
+var alertActions = {
+  success: success,
+  error: error,
+  clear: clear
+};
+exports.alertActions = alertActions;
+
+var success = function success(message) {
+  return {
+    type: _alert.alertConstants.SUCCESS,
+    message: message
+  };
+};
+
+var error = function error(message) {
+  return {
+    type: _alert.alertConstants.ERROR,
+    message: message
+  };
+};
+
+var clear = function clear(message) {
+  return {
+    type: _alert.alertConstants.CLEAR,
+    message: message
+  };
+};
+},{"../constants/alert.constant":"redux/constants/alert.constant.js"}],"redux/actions/user.action.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.userActions = void 0;
+
+var _user = require("../constants/user.constant");
+
+var _userService = require("../service/userService");
+
+var _alert = require("./alert.action");
+
+var userActions = {
+  signin: signin,
+  logout: logout,
+  register: register,
+  getUser: getUser
+};
+exports.userActions = userActions;
+
+var signin = function signin(email, password) {
+  return function (dispatch) {
+    return _userService.userService.signin(email, password).then(function (data) {
+      if (data) {
+        dispatch({
+          type: _user.userConstants.LOGIN_SUCCESS,
+          payload: {
+            user: data
+          }
+        });
+        dispatch({
+          type: _alert.alertActions.success,
+          payload: {
+            message: "logis successful"
+          }
+        });
+        history.push("/");
+      } else {
+        dispatch({
+          type: _user.userConstants.LOGIN_FAILURE
+        });
+        dispatch({
+          type: _alert.alertActions.error,
+          payload: {
+            message: "login failed"
+          }
+        });
+      }
+    });
+  };
+};
+
+var logout = function logout() {
+  _userService.userService.logout();
+
+  return {
+    type: _user.userConstants.LOGOUT
+  };
+};
+
+var register = function register(companyName, email, password) {
+  return function (dispatch) {
+    return _userService.userService.register(companyName, email, password).then(function (data) {
+      if (data) {
+        dispatch({
+          type: _user.userConstants.REGISTER_SUCCESS,
+          payload: {
+            user: data
+          }
+        });
+        dispatch({
+          type: _alert.alertActions.success,
+          payload: {
+            message: "registraton successfull"
+          }
+        });
+        history.push("/signin");
+      } else {
+        dispatch({
+          type: _user.userConstants.REGISTER_FAILURE
+        });
+        dispatch({
+          type: _alert.alertActions.error,
+          payload: {
+            message: "Registration Failed"
+          }
+        });
+      }
+    });
+  };
+};
+
+var getUser = function getUser(id) {
+  return function (dispatch) {
+    return _userService.userService.getUser(id).then(function (data) {
+      if (data) {
+        dispatch({
+          type: _user.userConstants.GETALL_SUCCESS,
+          payload: {
+            user: data
+          }
+        });
+      }
+    });
+  };
+};
+},{"../constants/user.constant":"redux/constants/user.constant.js","../service/userService":"redux/service/userService.js","./alert.action":"redux/actions/alert.action.js"}],"font/font.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./Nexa-Bold.otf":[["Nexa-Bold.77ea54e5.otf","font/Nexa-Bold.otf"],"font/Nexa-Bold.otf"],"./Nexa-Light.otf":[["Nexa-Light.96d4d9d7.otf","font/Nexa-Light.otf"],"font/Nexa-Light.otf"],"_css_loader":"C:/Users/Kanchan V/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Shared/style.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SideMargin = exports.StyledLink = exports.P = exports.H1 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.Form = exports.Input = exports.GoogleButton = exports.ButtonAscent = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+require("../font/font.css");
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject12() {
+  var data = _taggedTemplateLiteral(["\n  margin: 0px 2rem;\n  @media (min-width: 768px) {\n    margin: 0px 5rem;\n  }\n  @media (min-width: 1200px) {\n    margin: 0px 7rem;\n  }\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n  color: ", ";\n  font-family: nexa-light;\n  font-size: 1.2rem;\n  padding-right: 10px;\n\n  &:hover {\n    text-decoration: none;\n  }\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-light;\n  font-size: 1rem;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 2.5rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 480px) {\n    font-size: 1.8rem;\n  }\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\nfont-family: nexa-light;\nfont-size:1.2rem\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-light;\n  font-size: 1.2rem;\n  line-height: 1.5;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  font-size: 1.5rem;\n  letter-spacing: 1.5px;\n  font-family: nexa-bold;\n  @media (max-width: 768px) {\n    font-size: 1.5rem;\n  }\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.7rem;\n  letter-spacing: 1.5px;\n  @media (max-width: 768px) {\n    font-size: 1.2rem;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  background-color: ", ";\n  width: 70%;\n  padding: 2rem;\n  margin: 0 auto;\n  border-radius: 5px;\n  @media (min-width: 769px) {\n    position: relative;\n    top: 40%;\n    width: 40%;\n    -webkit-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%);\n  }\n  @media (max-width: 768px) {\n    width: 85% !important;\n    margin: 0 auto;\n    top: 20%;\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  padding: 0.5rem 1rem;\n  font-size: 1.2rem;\n  margin-bottom: 1rem;\n  width: 100%;\n  display: block;\n  &::placeholder {\n    font-size: 1rem;\n    text-transform: capitalize;\n  }\n  /* @media (max-width: 768px) {\n    width: 85%;\n    margin: 1rem auto;\n  } */\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  border: 1px solid ", ";\n  padding: 10px 30px;\n  width: 100%;\n  background-color: ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  background-color: ", ";\n  color: ", ";\n  padding: 10px 30px;\n  outline: none;\n  border: none;\n  outline: none;\n  border-radius: 30px;\n  margin: 1rem 0;\n  letter-spacing: 1.1px;\n  @media (max-width: 480px) {\n    width: 100%;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+//
+var ButtonAscent = _styledComponents.default.button(_templateObject(), function (props) {
+  return props.theme.$buttonBlue;
+}, function (props) {
+  return props.theme.$bgWhite;
+});
+
+exports.ButtonAscent = ButtonAscent;
+
+var GoogleButton = _styledComponents.default.button(_templateObject2(), function (props) {
+  return props.theme.$mainBlue;
+}, function (props) {
+  return props.theme.$bgWhite;
+});
+
+exports.GoogleButton = GoogleButton;
+
+var Input = _styledComponents.default.input(_templateObject3());
+
+exports.Input = Input;
+
+var Form = _styledComponents.default.form(_templateObject4(), function (props) {
+  return props.theme.$bgWhite;
+});
+
+exports.Form = Form;
+
+var H2 = _styledComponents.default.h2(_templateObject5());
+
+exports.H2 = H2;
+
+var H3 = _styledComponents.default.h3(_templateObject6());
+
+exports.H3 = H3;
+
+var H4 = _styledComponents.default.h4(_templateObject7());
+
+exports.H4 = H4;
+
+var H5 = _styledComponents.default.h5(_templateObject8());
+
+exports.H5 = H5;
+
+var H1 = _styledComponents.default.h1(_templateObject9());
+
+exports.H1 = H1;
+
+var P = _styledComponents.default.p(_templateObject10());
+
+exports.P = P;
+var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject11(), function (props) {
+  return props.theme.$bgWhite;
+});
+exports.StyledLink = StyledLink;
+
+var SideMargin = _styledComponents.default.div(_templateObject12());
+
+exports.SideMargin = SideMargin;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../font/font.css":"font/font.css","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Signup.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _authService = _interopRequireDefault(require("../services/authService"));
+
+var _axios = _interopRequireDefault(require("axios"));
+
+var _reactRedux = require("react-redux");
+
+var _user = require("../redux/actions/user.action");
+
+var _style = require("../Shared/style");
+
+require("../font/font.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  margin-left: 25px;\n  @media (max-width: 768px) {\n    flex-direction: column;\n    margin-left: 0px;\n  }\n  .left {\n    width: 50%;\n    @media (max-width: 768px) {\n      width: 100%;\n    }\n  }\n  .right {\n    @media (max-width: 768px) {\n      width: 100%;\n    }\n    width: 50%;\n    padding-left: 25px;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100vh;\n  background-color: ", ";\n  Form {\n    width: 70%;\n  }\n  H2 {\n    text-align: center;\n    padding: 15px 0;\n  }\n  H1 {\n    text-align: center;\n    padding: 20px 0;\n  }\n  .divider {\n    width: 100%;\n    text-align: center;\n    border-bottom: 1px solid black;\n    margin: 10px 0 20px;\n    line-height: 0.3em;\n    padding-top: 15px;\n  }\n  .privacy {\n    padding-top: 50px;\n  }\n  .linkContainer {\n    text-align: center;\n  }\n  span {\n    background-color: white;\n    padding: 0 10px;\n  }\n  @media (max-width: 768px) {\n    padding: 30px 0px;\n    height: 100%;\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  color: ", ";\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  font-family: nexa-bold;\n  font-size: 1.2rem;\n  padding-left: 10px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  padding-top: 30px;\n  padding: 15px 0px;\n  display: block;\n  width: 100%;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Header = _styledComponents.default.div(_templateObject());
+
+var Span = _styledComponents.default.span(_templateObject2());
+
+var I = _styledComponents.default.i(_templateObject3(), function (props) {
+  return props.theme.$buttonBlue;
+});
+
+var Div = _styledComponents.default.div(_templateObject4(), function (props) {
+  return props.theme.$mainBlue;
+});
+
+var FormWrapper = _styledComponents.default.div(_templateObject5());
+
+var Signup = /*#__PURE__*/function (_Component) {
+  _inherits(Signup, _Component);
+
+  var _super = _createSuper(Signup);
+
+  function Signup(props) {
+    var _this;
+
+    _classCallCheck(this, Signup);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handleInput", function (e) {
+      _this.setState(_defineProperty({}, e.target.name, e.target.value));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleForm", function (e) {
+      e.preventDefault();
+      var _this$state = _this.state,
+          companyName = _this$state.companyName,
+          email = _this$state.email,
+          password = _this$state.password; // if ((companyName, email, password)) {
+      //   this.props.register(companyName, email, password);
+      // }
+
+      _axios.default.post("http://localhost:3636/users/signup", {
+        companyName: companyName,
+        email: email,
+        password: password
+      }).then(function (response) {
+        if (response) {
+          console.log(response.data);
+
+          _this.props.history.push("/signin");
+        }
+      });
+    });
+
+    _this.state = {
+      companyName: "",
+      email: "",
+      password: "",
+      submitted: false
+    };
+    return _this;
+  }
+
+  _createClass(Signup, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement(Div, null, /*#__PURE__*/_react.default.createElement(_style.H1, null, "DIGIM"), " ", /*#__PURE__*/_react.default.createElement(_style.Form, {
+        onSubmit: this.handleForm
+      }, " ", /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(_style.H2, null, "Create your free account today"), " ", /*#__PURE__*/_react.default.createElement(_style.H3, null, "No contract no credit card required")), /*#__PURE__*/_react.default.createElement(FormWrapper, null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "left"
+      }, /*#__PURE__*/_react.default.createElement(_style.Input, {
+        type: "text",
+        name: "companyName",
+        onChange: this.handleInput,
+        placeholder: "enter your company name",
+        value: this.state.value
+      }), /*#__PURE__*/_react.default.createElement(_style.Input, {
+        type: "email",
+        name: "email",
+        onChange: this.handleInput,
+        placeholder: "enter your email",
+        value: this.state.value
+      }), /*#__PURE__*/_react.default.createElement(_style.Input, {
+        type: "password",
+        name: "password",
+        onChange: this.handleInput,
+        placeholder: "enter your password",
+        value: this.state.value
+      }), /*#__PURE__*/_react.default.createElement(_style.ButtonAscent, {
+        type: "submit"
+      }, "Get Started"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "divider"
+      }, /*#__PURE__*/_react.default.createElement("span", null, "OR")), /*#__PURE__*/_react.default.createElement(_style.GoogleButton, null, "Sign Up With Google")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "right"
+      }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
+        className: "fas fa-headphones"
+      }), /*#__PURE__*/_react.default.createElement(Span, null, " Customer support"), " in 6 languages"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
+        className: "fas fa-envelope"
+      }), /*#__PURE__*/_react.default.createElement(Span, null, " 70 Million Emails & SMS "), "Sent Every Day"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement(I, {
+        className: "fas fa-users"
+      }), /*#__PURE__*/_react.default.createElement(Span, null, "100,000 Users "), " in 6 languages"), /*#__PURE__*/_react.default.createElement("p", null, " ", /*#__PURE__*/_react.default.createElement(I, {
+        className: "fas fa-bullhorn"
+      }), /*#__PURE__*/_react.default.createElement(Span, null, "Send up to 300 "), " emails free per day"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "privacy"
+      }, "By signing up, you are creating a DIGIM account, and you agree to DIGIM'S Terms of Use and Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "linkContainer"
+      }, /*#__PURE__*/_react.default.createElement(_style.StyledLink, {
+        to: "/signin"
+      }, "I Already have an account")));
+    }
+  }]);
+
+  return Signup;
+}(_react.Component); // function mapState(state) {
+//   const { registering } = state.registration;
+//   return { registering };
+// }
+// const actionCreators = {
+//   register: userActions.register,
+// };
+// export default connect(mapState, actionCreators)(Signup);
+
+
+exports.default = Signup;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../services/authService":"services/authService.js","axios":"node_modules/axios/index.js","react-redux":"node_modules/react-redux/es/index.js","../redux/actions/user.action":"redux/actions/user.action.js","../Shared/style":"Shared/style.js","../font/font.css":"font/font.css"}],"services/authHeader.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -73370,7 +73376,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding-top: 100px;\n  width: 100%;\n  @media (max-width: 767px) {\n    flex-direction: column;\n  }\n  .left-section {\n    width: 40%;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    H1 {\n      max-width: 400px;\n      font-size: 3.5rem;\n      padding-top: 100px;\n      @media (max-width: 480px) {\n        font-size: 2rem;\n        padding-top: 20px;\n      }\n    }\n    H4 {\n      max-width: 450px;\n      border-left: 3px solid ", ";\n      padding-left: 20px;\n      margin-top: 20px;\n    }\n  }\n  .right-section {\n    padding-left: 20px;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    width: 60%;\n    img {\n      width: 100%;\n      max-width: 650px;\n      padding-top: 50px;\n      @media (max-width: 480px) {\n        padding-top: 20px;\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding-top: 35px;\n  width: 100%;\n  @media (max-width: 767px) {\n    flex-direction: column;\n  }\n  .left-section {\n    width: 40%;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    H1 {\n      max-width: 400px;\n      font-size: 3.5rem;\n      padding-top: 100px;\n      @media (max-width: 480px) {\n        font-size: 2rem;\n        padding-top: 20px;\n      }\n    }\n    H4 {\n      max-width: 450px;\n      border-left: 3px solid ", ";\n      padding-left: 20px;\n      margin-top: 20px;\n    }\n  }\n  .right-section {\n    padding-left: 20px;\n    @media (max-width: 480px) {\n      width: 100%;\n    }\n    width: 60%;\n    img {\n      width: 100%;\n      max-width: 650px;\n      padding-top: 50px;\n      @media (max-width: 480px) {\n        padding-top: 20px;\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -73422,8 +73428,7 @@ var Home = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
     _this.state = {
       companyName: "",
-      email: "",
-      currentUser: ""
+      email: ""
     };
     return _this;
   }
@@ -74428,8 +74433,13 @@ exports.registration = registration;
 
 var _user = require("../constants/user.constant");
 
+var initialState = {
+  companyName: "",
+  email: ""
+};
+
 function registration() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
@@ -74817,7 +74827,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64667" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50429" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

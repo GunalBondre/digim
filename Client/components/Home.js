@@ -9,7 +9,7 @@ import jwt_decode from "jwt-decode";
 
 const Wrapper = styled.div`
   display: flex;
-  padding-top: 100px;
+  padding-top: 35px;
   width: 100%;
   @media (max-width: 767px) {
     flex-direction: column;
@@ -176,7 +176,6 @@ export default class Home extends Component {
     this.state = {
       companyName: "",
       email: "",
-      currentUser: "",
     };
   }
 
