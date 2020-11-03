@@ -59,6 +59,7 @@ const signup = async (req, res) => {
         newUser: {
           id: newUser.id,
           email: newUser.email,
+          companyName: newUser.companyName,
         },
       });
     }

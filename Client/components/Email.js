@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Nav } from "react-bootstrap";
 import Sidebar from "./Sidebar";
 import "../stylesheet/common";
+import { Link } from "react-router-dom";
 
 import { H2, ButtonAscent } from "../Shared/style";
 import styled from "styled-components";
@@ -36,34 +37,36 @@ export default class Email extends Component {
     return (
       <div>
         <EmailCampaign>
-          <div className="container">
-            <div className="sidebar">
-              <div className="left-section">
+          <div className='container'>
+            <div className='sidebar'>
+              <div className='left-section'>
                 <Sidebar />
               </div>
-              <div className="right-section">
-                <div className="createCampaign">
+              <div className='right-section'>
+                <div className='createCampaign'>
                   <H2>Email Campaigns</H2>
-                  <ButtonAscent>Create an email campaign</ButtonAscent>
+                  <Link to='/users/createEmail'>
+                    <ButtonAscent>Create an email campaign</ButtonAscent>
+                  </Link>
                 </div>
-                <Nav defaultActiveKey="/home" as="ul">
-                  <Nav.Item as="li">
-                    <Nav.Link href="/home">All</Nav.Link>
+                <Nav defaultActiveKey='/home' as='ul'>
+                  <Nav.Item as='li'>
+                    <Nav.Link href='/home'>All</Nav.Link>
                   </Nav.Item>
-                  <Nav.Item as="li">
-                    <Nav.Link eventKey="link-1">Sent</Nav.Link>
+                  <Nav.Item as='li'>
+                    <Nav.Link eventKey='link-1'>Sent</Nav.Link>
                   </Nav.Item>
-                  <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2">Draft</Nav.Link>
+                  <Nav.Item as='li'>
+                    <Nav.Link eventKey='link-2'>Draft</Nav.Link>
                   </Nav.Item>
-                  <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2">Scheduled</Nav.Link>
+                  <Nav.Item as='li'>
+                    <Nav.Link eventKey='link-2'>Scheduled</Nav.Link>
                   </Nav.Item>
-                  <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2">Suspended</Nav.Link>
+                  <Nav.Item as='li'>
+                    <Nav.Link eventKey='link-2'>Suspended</Nav.Link>
                   </Nav.Item>
-                  <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2">Running</Nav.Link>
+                  <Nav.Item as='li'>
+                    <Nav.Link eventKey='link-2'>Running</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </div>

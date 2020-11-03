@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { link } from "react-router-dom";
+import register from "../services/authService";
 import axios from "axios";
+// import { connect } from "react-redux";
+// import { userActions } from "../redux/actions/user.action";
 import {
   Input,
   Form,
@@ -95,9 +98,10 @@ export default class Signup extends Component {
     super(props);
 
     this.state = {
-      companName: "",
+      companyName: "",
       email: "",
       password: "",
+      submitted: false,
     };
   }
   handleInput = (e) => {
@@ -108,19 +112,20 @@ export default class Signup extends Component {
 
   handleForm = (e) => {
     e.preventDefault();
-    const userData = {
-      companyName: this.state.companyName,
-      email: this.state.email,
-      password: this.state.password,
-    };
-    axios.post("http://localhost:3636/users/signup", userData).then((res) => {
-      console.log(res.data);
-      if (res.status == 200) {
-        this.props.history.push("/signin");
-      } else {
-        history.push("/signup");
-      }
-    });
+
+    const { companyName, email, password } = this.state;
+    axios
+      .post("http://localhost:3636/users/signup", {
+        companyName,
+        email,
+        password,
+      })
+      .then((response) => {
+        if (response) {
+          console.log(response.data);
+          this.props.history.push("/signin");
+        }
+      });
   };
 
   render() {
@@ -134,63 +139,72 @@ export default class Signup extends Component {
             <H3>No contract no credit card required</H3>
           </Header>
           <FormWrapper>
-            <div className="left">
+            <div className='left'>
               <Input
-                type="text"
-                name="companyName"
+                type='text'
+                name='companyName'
                 onChange={this.handleInput}
-                placeholder="enter your company name"
+                placeholder='enter your company name'
                 value={this.state.value}
               ></Input>
               <Input
-                type="email"
-                name="email"
+                type='email'
+                name='email'
                 onChange={this.handleInput}
-                placeholder="enter your email"
+                placeholder='enter your email'
                 value={this.state.value}
               ></Input>
               <Input
-                type="password"
-                name="password"
+                type='password'
+                name='password'
                 onChange={this.handleInput}
-                placeholder="enter your password"
+                placeholder='enter your password'
                 value={this.state.value}
               ></Input>
-              <ButtonAscent type="submit">Get Started</ButtonAscent>
-              <p className="divider">
+              <ButtonAscent type='submit'>Get Started</ButtonAscent>
+              <p className='divider'>
                 <span>OR</span>
               </p>
               <GoogleButton>Sign Up With Google</GoogleButton>
             </div>
-            <div className="right">
+            <div className='right'>
               <p>
-                <I className="fas fa-headphones"></I>
+                <I className='fas fa-headphones'></I>
                 <Span> Customer support</Span> in 6 languages
               </p>
               <p>
-                <I className="fas fa-envelope"></I>
+                <I className='fas fa-envelope'></I>
                 <Span> 70 Million Emails & SMS </Span>Sent Every Day
               </p>
               <p>
-                <I className="fas fa-users"></I>
+                <I className='fas fa-users'></I>
                 <Span>100,000 Users </Span> in 6 languages
               </p>
               <p>
                 {" "}
-                <I className="fas fa-bullhorn"></I>
+                <I className='fas fa-bullhorn'></I>
                 <Span>Send up to 300 </Span> emails free per day
               </p>
-              <p className="privacy">
+              <p className='privacy'>
                 By signing up, you are creating a DIGIM account, and you agree
                 to DIGIM'S Terms of Use and Privacy Policy
               </p>
             </div>
           </FormWrapper>
         </Form>
-        <div className="linkContainer">
-          <StyledLink to="/signin">I Already have an account</StyledLink>
+        <div className='linkContainer'>
+          <StyledLink to='/signin'>I Already have an account</StyledLink>
         </div>
       </Div>
     );
   }
 }
+
+// function mapState(state) {
+//   const { registering } = state.registration;
+//   return { registering };
+// }
+// const actionCreators = {
+//   register: userActions.register,
+// };
+// export default connect(mapState, actionCreators)(Signup);

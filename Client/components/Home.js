@@ -5,7 +5,8 @@ import imgSrc from "../assets/email.jpg";
 import emaildetailImg from "../assets/email_marketing_plants_desktop.jpg";
 import onlineStoreImg from "../assets/online_stores_gems_desktop.jpg";
 import socialImage from "../assets/social_marketing_food_desktop.jpg";
-import Footer from './Footer'
+import jwt_decode from "jwt-decode";
+
 const Wrapper = styled.div`
   display: flex;
   padding-top: 100px;
@@ -169,12 +170,22 @@ const GrowWebsite = styled.div`
   }
 `;
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      companyName: "",
+      email: "",
+      currentUser: "",
+    };
+  }
+
   render() {
     return (
       <div>
-        <div className="container">
+        <div className='container'>
           <Wrapper>
-            <div className="left-section">
+            <div className='left-section'>
               <H1>Prepare for take off</H1>
               <H4>
                 Digim helps small businesses do big things, with the right tools
@@ -182,12 +193,12 @@ export default class Home extends Component {
               </H4>
               <ButtonAscent>Take a free test drive</ButtonAscent>
             </div>
-            <div className="right-section">
-              <img src={imgSrc} alt="" />
+            <div className='right-section'>
+              <img src={imgSrc} alt='' />
             </div>
           </Wrapper>
         </div>
-        <div className="container">
+        <div className='container'>
           <WhyDigim>
             <H2>Why digim?</H2>
             <H2>
@@ -203,26 +214,26 @@ export default class Home extends Component {
             </H4>
           </WhyDigim>
         </div>
-        <div className="container">
+        <div className='container'>
           <Features>
-            <div className="contents">
-              <i className="fa fa-envelope fa-4x"></i>
+            <div className='contents'>
+              <i className='fa fa-envelope fa-4x'></i>
               <H3>Email Marketing</H3>
               <H4>
                 Grow your brand by reaching people where they go every day:
                 their inbox.
               </H4>
             </div>
-            <div className="contents">
-              <i className="fa fa-store fa-4x"></i>
+            <div className='contents'>
+              <i className='fa fa-store fa-4x'></i>
               <H3>Ecommerce Store </H3>
               <H4>
                 Set up an online store in no time and start selling your digital
                 or physical goods fast.
               </H4>
             </div>
-            <div className="contents">
-              <i className="fa fa-user fa-4x"></i>
+            <div className='contents'>
+              <i className='fa fa-user fa-4x'></i>
               <H3>Social Media Merketing</H3>
               <H4>
                 Use Facebook and Instagram ads to bring new leads to your
@@ -232,9 +243,9 @@ export default class Home extends Component {
           </Features>
         </div>
         <FeatureDetail>
-          <div className="container">
-            <div className="featureDetail-wrapper">
-              <div className="leftSection">
+          <div className='container'>
+            <div className='featureDetail-wrapper'>
+              <div className='leftSection'>
                 <H3>Email Marketing</H3>
                 <H2>Communicate Smarter</H2>
                 <H4>
@@ -248,19 +259,19 @@ export default class Home extends Component {
                 </H4>
                 <ButtonAscent>Learn More</ButtonAscent>
               </div>
-              <div className="rightSection">
-                <img src={emaildetailImg} alt=""  />
+              <div className='rightSection'>
+                <img src={emaildetailImg} alt='' />
               </div>
             </div>
           </div>
         </FeatureDetail>
         <StoreDetail>
-          <div className="container">
-            <div className="wrapper">
-              <div className="leftSection">
-                <img src={onlineStoreImg} alt="" />
+          <div className='container'>
+            <div className='wrapper'>
+              <div className='leftSection'>
+                <img src={onlineStoreImg} alt='' />
               </div>
-              <div className="rightSection">
+              <div className='rightSection'>
                 <H3>Online Store</H3>
                 <H2>Sell Smarter</H2>
                 <H4>
@@ -277,9 +288,9 @@ export default class Home extends Component {
           </div>
         </StoreDetail>
         <FeatureDetail>
-          <div className="container">
-            <div className="featureDetail-wrapper">
-              <div className="leftSection">
+          <div className='container'>
+            <div className='featureDetail-wrapper'>
+              <div className='leftSection'>
                 <H3>Social Marketing</H3>
                 <H2>Connect Smarter</H2>
                 <H4>
@@ -289,20 +300,20 @@ export default class Home extends Component {
                 </H4>
                 <ButtonAscent>Learn More</ButtonAscent>
               </div>
-              <div className="rightSection">
-                <img src={socialImage} alt="" />
+              <div className='rightSection'>
+                <img src={socialImage} alt='' />
               </div>
             </div>
           </div>
         </FeatureDetail>
         <GrowWebsite>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-6'>
                 <H2>4 Easy Ways To Grow Your Business</H2>
               </div>
-              <div className="col-md-6">
-                <ul className="steps">
+              <div className='col-md-6'>
+                <ul className='steps'>
                   <li>
                     <H3>1. Set Up online Store </H3>
                     <p>

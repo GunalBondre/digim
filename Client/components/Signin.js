@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import axios from "axios";
+import { userActions } from "../redux/actions/user.action";
+import { connect } from "react-redux";
+import authHeader from "../services/authHeader";
+import jwt_decode from "jwt-decode";
+
 import {
   Input,
   Form,
@@ -50,6 +55,7 @@ export default class Signin extends Component {
     this.state = {
       email: "",
       password: "",
+      submitted: false,
     };
   }
 
@@ -70,6 +76,8 @@ export default class Signin extends Component {
       .post("http://localhost:3636/users/signin", userData)
       .then((response) => {
         if (response.data.token) {
+          const token = response.data.token;
+          const user = jwt_decode(token);
           localStorage.setItem("token", response.data);
           console.log(response.data);
           this.props.history.push("/");
@@ -91,30 +99,42 @@ export default class Signin extends Component {
         <Form onSubmit={this.handleForm}>
           <H2>Sign In</H2>
           <Input
-            type="email"
-            placeholder="Enter email"
+            type='email'
+            placeholder='Enter email'
             onChange={this.handleInput}
             value={this.state.value}
-            name="email"
+            name='email'
           ></Input>
           <Input
-            type="password"
-            placeholder="Enter password"
+            type='password'
+            placeholder='Enter password'
             onChange={this.handleInput}
             value={this.state.value}
-            name="password"
+            name='password'
           ></Input>
-          <ButtonAscent type="submit">Get Started</ButtonAscent>
+          <ButtonAscent type='submit'>Get Started</ButtonAscent>
           <P>
             <span>OR</span>
           </P>
           <GoogleButton>Sign in With Google</GoogleButton>
         </Form>
-        <div className="linkContainer">
-          <StyledLink to="Signup">Create an account</StyledLink>
-          <StyledLink to="ForgotPassword">Forgot Password</StyledLink>
+        <div className='linkContainer'>
+          <StyledLink to='Signup'>Create an account</StyledLink>
+          <StyledLink to='ForgotPassword'>Forgot Password</StyledLink>
         </div>
       </Div>
     );
   }
 }
+// function mapState(state) {
+//   const { loggingIn } = state.authentication;
+//   return { loggingIn };
+// }
+
+// const actionCreators = {
+//   login: userActions.signin,
+//   logout: userActions.logout,
+// };
+
+// const connectedLoginPage = connect(mapState, actionCreators)(Signin);
+// export { connectedLoginPage as Signin };

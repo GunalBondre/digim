@@ -22,6 +22,8 @@ router.route("/signup").post(userController.signup);
 router.route("/signin").get(userController.getSignin);
 router.route("/signup").get(userController.getSignup);
 router.route("/verify").get(auth, userController.verifyUser);
+router.route("/verify").get(auth, userController.verifyUser);
+
 router
   .route("/:id")
   .get(auth, userController.getUser)
